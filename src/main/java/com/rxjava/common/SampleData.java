@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class SimpleData {
+public class SampleData {
     public static CarMaker[] carMakersDuplicated = {
             CarMaker.CHEVROLET,
             CarMaker.HYUNDAE,
