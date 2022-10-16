@@ -20,9 +20,20 @@ public class Practice {
         Observable<Integer> observable2 = Observable.fromIterable(SampleData.salesOfBranchB);
         Observable<Integer> observable3 = Observable.fromIterable(SampleData.salesOfBranchC);
         Observable<Integer> observable4 = Observable.range(1, 12);
-        Observable.combineLatest(observable1, observable2, observable3, observable4,
-                        (data1, data2, data3, data4) -> data4 + "월 통합매출: " + data1 + data2 + data3)
+        Observable.zip(observable1, observable2, observable3, observable4,
+                        (data1, data2, data3, data4) -> data4 + "월 통합매출: " + ((int)data1 + (int)data2 + (int)data3))
                 .subscribe(data -> Logger.log(LogType.ON_NEXT, data));
+
+        System.out.println("-----------------------------------");
+        List<Observable<Integer>> salesList = Arrays.asList(
+                Observable.fromIterable(SampleData.salesOfBranchA),
+                Observable.fromIterable(SampleData.salesOfBranchB),
+                Observable.fromIterable(SampleData.salesOfBranchC)
+        );
+
+        Observable.zip(salesList, sales -> (int)sales[0] + (int)sales[1] + (int)sales[2])
+                .subscribe(data -> Logger.log(LogType.ON_NEXT, data));
+
 
     }
 }
