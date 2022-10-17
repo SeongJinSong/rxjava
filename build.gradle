@@ -19,6 +19,8 @@ dependencies {
 
 	implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
 	implementation 'org.junit.platform:junit-platform-commons:1.8.2'
+
+	testImplementation 'org.hamcrest:hamcrest'
 }
 
 tasks.named('test') {
