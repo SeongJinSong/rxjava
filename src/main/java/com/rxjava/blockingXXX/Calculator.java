@@ -1,4 +1,4 @@
-package com.rxjava.blocking;
+package com.rxjava.blockingXXX;
 
 public class Calculator {
     private int sum;

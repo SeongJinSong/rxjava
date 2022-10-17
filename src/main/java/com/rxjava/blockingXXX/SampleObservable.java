@@ -1,4 +1,4 @@
-package com.rxjava.blocking;
+package com.rxjava.blockingXXX;
 
 import com.rxjava.common.Car;
 import com.rxjava.common.CarMaker;

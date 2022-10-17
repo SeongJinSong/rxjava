@@ -1,4 +1,4 @@
-package com.rxjava.blocking;
+package com.rxjava.blockingXXX;
 
 import org.junit.jupiter.api.BeforeAll;
 

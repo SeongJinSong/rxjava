@@ -1,4 +1,4 @@
-package com.rxjava.blocking;
+package com.rxjava.blockingXXX;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.nullValue;
